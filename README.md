@@ -1,4 +1,4 @@
-# Blocksignalensken
+# Blocksignal en-sken
 
 Styrning till äldre Blocksignaler med färgväxlare.
 
@@ -44,7 +44,10 @@ Huvudljussignal som infartssignal kunde saknas vid högerspårskörning. Då fö
 
 <tr>
 
-<td rowspan="3" align="center" width="100" valign="top">![](blsi_fvxl_0.gif)</td>
+<td rowspan="3" align="center" width="100" valign="top">
+Fast röd sken
+
+![](blsi_fvxl_0.gif)</td>
 
 <td align="left" width="190" valign="top">
 
@@ -102,7 +105,10 @@ Undantagsvis är skenet blinkande</font>
 
 <tr>
 
-<td rowspan="3" align="center" width="100" valign="top">![](blsi_fvxl_v0.gif)</td>
+<td rowspan="3" align="center" width="100" valign="top">
+Blinkande grön sken
+
+![](blsi_fvxl_v0.gif)</td>
 
 <td align="left" width="190" valign="top">
 
@@ -159,7 +165,10 @@ Undantagsvis är skenet blinkande</font>
 
 <tr>
 
-<td rowspan="3" align="center" width="100" valign="top">![](blsi_fvxl_k.gif)</td>
+<td rowspan="3" align="center" width="100" valign="top">
+Fast grön sken
+
+![](blsi_fvxl_k.gif)</td>
 
 <td align="left" width="190" valign="top">
 
