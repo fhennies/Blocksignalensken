@@ -1,13 +1,13 @@
 #include <Arduino.h>
 
-int fadePin[3] = {3, 5, 13};                 // LED connected to digital pin 13
-boolean isStop = 0, isGo = 0, isStopGo = 0;
-char stopPin = A1;
-char goPin = A0;
-boolean ledOn = false, ledAnAus = false;
-unsigned long nextFade[2];
-int fadeBrightness[2] = {150, 150};
-char ledState = LOW, fadeDir[2] = {1, 1};
+int fadePin[] = {3, 5, 6, 9, 10, 11};                 // LED connected to digital pin 13
+static const uint8_t stopPin[] = {A1,A3,A5};
+static const uint8_t  goPin[] = {A0,A2,A4};
+boolean isStop[] = {0, 0, 0}, isGo[] = {0, 0, 0};
+unsigned long nextFade[6];
+int fadeBrightness[] = {150, 150, 150, 150, 150, 150};
+char fadeDir[] = {1, 1, 1, 1, 1, 1};
+
 
 
 void fade(boolean isOn, boolean isBlink, int ledNr) {
@@ -37,22 +37,24 @@ void fade(boolean isOn, boolean isBlink, int ledNr) {
 
 void setup() {
     // put your setup code here, to run once:
-    pinMode(fadePin[0], OUTPUT);      // sets the digital pin as output
-    pinMode(fadePin[1], OUTPUT);
-    pinMode(stopPin, INPUT_PULLUP);
-    pinMode(goPin, INPUT_PULLUP);
-    ledState = LOW;
-    nextFade[0] = millis();
-    nextFade[1] = millis() + 500;
-    digitalWrite(fadePin[0], LOW);
-    digitalWrite(fadePin[1], LOW);
+    for (int i = 0; i < 6; i++) {
+        pinMode(fadePin[i], OUTPUT);      // sets the digital pin as output
+        digitalWrite(fadePin[i], LOW);
+        nextFade[i] = millis() + 100 * i;
+    };
+    for (int i = 0; i < 3; i++) {
+        pinMode(goPin[i], INPUT_PULLUP);
+        pinMode(stopPin[i], INPUT_PULLUP);
+    };
+        
 }
 
 void loop() {
-    // put your main code here, to run repeatedly:
-    isStop = digitalRead(stopPin);
-    isGo = digitalRead(goPin);
-    fade(isGo, (isStop && isGo), 0);
-    fade(isStop, false, 1);
-    //digitalWrite(fadePin[2], !isStop);
+    //Eingägne einlesen, Ausgänge setzen
+    for (int i = 0; i < 3; i++) {
+        isStop[i] = digitalRead(stopPin[i]);
+        isGo[i] = digitalRead(goPin[i]);
+        fade(isGo[i], (isStop[i] && isGo[i]), i*2);
+        fade(isStop[i], false, i*2+1);
+    };
 }

@@ -2,12 +2,14 @@
 
 Styrning till äldre Blocksignaler med färgväxlare.
 
-Beskrivning citerat från http://www.ekeving.se/si/pf-aldre/aldre-besked.html
+Beskrivning tagit från 
+
+http://www.ekeving.se/si/pf-aldre/aldre-besked.html
 
 ## Blocksignaler med färgväxlare:
 
 ### Allmänt
-
+s
 Blocksignaler med färgväxlare förekom främst på sträckor med äldre typ av automatisk linjeblockering och fungerade som kombinerad huvud- och försignal. Signaltypen benämns även **huvudljussignal med en ljusöppning**. När färgväxlaren låg i opåverkat viloläge låg ett rött glas i signaloptiken. När körbesked visades matades en elektromagnet med ström så att ett grönt glas fälldes in istället. Bakgrundsskärmens diameter var 1000 mm, lyktöppningen 200 mm, skärmens framsida var mattsvart, baksidan grå (åtminstone på 1940-talet) men kan på senare år ha blivit svart, skärmen kunde vara monterad lutande framåt.
 
 År 1956 infördes den nya typen av automatisk reläbaserad linjeblockeringen av den sort som än idag nyinstalleras. Det gamla systemet med färgväxlarsignaler **förefaller** (innehållsmästarn är osäker...) i första hand ha slopats på enkelspårssträckor, och levde kvar längst på dubbelspårssträckor. Signalen utgick ur säo 1973-06-18 men fortlevde länge därefter på dispens. De sista förekomsterna var på sträckorna Arlöv -- Hässleholm där typen successivt slopades 1978--81, samt Hallsberg -- Örebro södra, slopad våren 1977.
