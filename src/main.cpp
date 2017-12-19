@@ -21,11 +21,11 @@ void fade(boolean isOn, boolean isBlink, int ledNr) {
         nextFade[ledNr] = now + 1;
         if ((fadeDir[ledNr] > 0) && (fadeBrightness[ledNr] > 254)){
                 fadeDir[ledNr] = - fadeDir[ledNr];
-                nextFade[ledNr] += 1000;
+                nextFade[ledNr] += 500;
         } 
         else if ((fadeDir[ledNr] < 0) && (fadeBrightness[ledNr] < 1)) {
                 fadeDir[ledNr] = - fadeDir[ledNr];
-                nextFade[ledNr] += 1000;
+                nextFade[ledNr] += 500;
         }
         else {  fadeBrightness[ledNr] += fadeDir[ledNr];
         }
